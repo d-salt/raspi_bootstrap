@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+
+  roles:
+    - users
+    - localize
+    - packages
+    - networks
+    - systems
+    - reboot

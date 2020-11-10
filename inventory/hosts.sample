@@ -1,0 +1,5 @@
+[all]
+raspberrypi.local  hostname=raspi  ip=192.168.1.100
+
+[all:vars]
+ansible_user=pi

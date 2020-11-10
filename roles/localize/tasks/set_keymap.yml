@@ -1,0 +1,5 @@
+---
+
+- name: Be sure keybord layout is configured
+  command:
+    cmd: "localectl set-keymap {{ keymap }}"

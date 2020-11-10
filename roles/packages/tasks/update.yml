@@ -1,0 +1,7 @@
+---
+
+- name: Be sure packages are updated
+  apt:
+    update_cache: yes
+    upgrade: yes
+  when: not ansible_check_mode

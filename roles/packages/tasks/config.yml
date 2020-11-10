@@ -1,0 +1,12 @@
+---
+
+- name: Be sure configure files are exist
+  git:
+    repo: "{{ dotfiles_url }}"
+    dest: /home/pi/.dotfiles
+    update: no
+
+- name: Be sure configure files are deploied
+  make:
+    chdir: /home/pi/.dotfiles
+    target: deploy

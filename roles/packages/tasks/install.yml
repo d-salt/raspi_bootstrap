@@ -1,0 +1,7 @@
+---
+
+- name: Be sure packages are installed
+  apt:
+    name: "{{ packages }}"
+    state: present
+  when: not ansible_check_mode

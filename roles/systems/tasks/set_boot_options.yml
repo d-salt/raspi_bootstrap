@@ -1,0 +1,5 @@
+---
+
+- name: Be sure enable auto login
+  command:
+    cmd: raspi-config nonint do_boot_behaviour B2

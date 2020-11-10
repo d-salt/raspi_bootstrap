@@ -1,0 +1,19 @@
+pi_password: newpassword
+
+network:
+  class: 24
+  router: 192.168.1.1
+  dns: 192.168.1.1 8.8.8.8
+
+system:
+  locale: en_US.UTF-8
+  language: en_US.UTF-8
+  timezone: Asia/Tokyo
+keymap: us
+
+packages:
+  - git
+  - emacs
+  - tmux
+
+dotfiles_url: https://github.com/d-salt/minidots.git

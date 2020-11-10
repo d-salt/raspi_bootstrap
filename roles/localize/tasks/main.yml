@@ -1,0 +1,6 @@
+---
+
+- include_tasks: set_locales.yml
+- include_tasks: set_timezone.yml
+- include_tasks: set_keymap.yml
+

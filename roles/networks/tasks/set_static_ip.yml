@@ -1,0 +1,12 @@
+---
+
+- name: Be sure static ip address is configured
+  blockinfile:
+    path: /etc/dhcpcd.conf
+    block: |
+      interface eth0
+      static ip_address={{ ip }}/{{ network.class }}
+      static routers={{ network.router }}
+      static domain_name_servers={{ network.dns }}
+    state: present
+    backup: yes

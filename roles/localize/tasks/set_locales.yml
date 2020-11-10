@@ -1,0 +1,15 @@
+---
+
+- name: Be sure a locale exists
+  locale_gen:
+    name: "{{ system.locale }}"
+    state: present
+
+- name: Be sure a locale exists
+  locale_gen:
+    name: "{{ system.language }}"
+    state: present
+
+- name: Be sure system locale is configured
+  command:
+    cmd: "localectl set-locale LANG={{ system.locale }} LC_ALL={{ system.language }}"

@@ -1,0 +1,5 @@
+---
+
+- name: Be sure Timezone is configured
+  timezone:
+    name: "{{ system.timezone }}"
